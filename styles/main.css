@@ -1,0 +1,38 @@
+@import url("reset.css");
+
+:root {
+    color-scheme: light dark;
+    --background-color: light-dark(#7F279E, #4b175e);
+    --container-color: light-dark(#EEE, #333);
+    --text-color: light-dark(#4b175e, #a934d3);
+}
+
+body, html {
+    display: grid;
+    height: 100%;
+
+    font-family: sans-serif;
+}
+
+body {
+    background: url("/assets/background.svg"), var(--background-color);
+}
+
+main {
+    margin: auto;
+
+    background: var(--container-color);
+
+    padding: 4em 8em;
+
+    border-radius: 1em;
+}
+
+p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: oblique;
+
+    color: var(--text-color);
+}
